@@ -6,5 +6,7 @@ local badgeIds = {1060922754,1062934354,1062935427,1063102800,1063105189,1063105
 for i,_ in ipairs(badgeIds) do
 	if not BadgeService:UserHasBadgeAsync(UserId, badgeIds[i]) then
 		BadgeService:AwardBadge(UserId, badgeIds[i])
+	else
+		print(string.format("Skipped, Badge Id: %s", badgeIds[i]))
 	end
 end
