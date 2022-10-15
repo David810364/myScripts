@@ -1,0 +1,6 @@
+local new = Instance.new("Message", workspace)
+new.Text = "Increasing Ping."
+
+repeat
+	
+until true
